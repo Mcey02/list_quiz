@@ -39,3 +39,24 @@ end
 
 puts bigger_two([1, 2], [3, 4])
 puts bigger_two([1, 7], [4, 4])
+
+def series_up(n)
+    size = n # * (n + 1) / 2
+    highest = 1
+    number = 1
+    list = []
+    size.times do
+        number = 1
+        while number <= highest 
+            list.push(number)
+            number += 1
+        end
+        highest += 1
+    end
+    return list
+end
+
+puts series_up(1)
+puts series_up(2)
+puts series_up(3)
+puts series_up(4)
