@@ -37,15 +37,15 @@ def bigger_two(list1, list2)
     end 
 end
 
-puts bigger_two([1, 2], [3, 4])
-puts bigger_two([1, 7], [4, 4])
+print bigger_two([1, 2], [3, 4]) #changed puts to print so as to print list in list format
+print bigger_two([1, 7], [4, 4])
 
 def series_up(n)
-    size = n # * (n + 1) / 2
+    # deleted commented out code that I didn't need as well as a useless variable
     highest = 1
     number = 1
     list = []
-    size.times do
+    n.times do
         number = 1
         while number <= highest 
             list.push(number)
@@ -56,7 +56,8 @@ def series_up(n)
     return list
 end
 
-puts series_up(1)
-puts series_up(2)
-puts series_up(3)
-puts series_up(4)
+puts "" #added puts to put answers for questions two and three on different lines
+print series_up(1) #changed puts to print so as to print list in list format
+print series_up(2) 
+print series_up(3) 
+print series_up(4) 
